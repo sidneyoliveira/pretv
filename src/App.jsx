@@ -19,7 +19,7 @@ export default function App() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 99999,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -29,17 +29,19 @@ export default function App() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide className='item-img'>
-          <img src="./img/a1.jpg" alt="" />
+        <SwiperSlide >
+          <div className="image-container">
+
+            <img src="./img/a1.jpg" alt="" class='background' />
+            <img src="./img/a1.jpg" alt="" class='item' />
+            
+          </div>
         </SwiperSlide>
+
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+
       </Swiper>
     </>
   );
