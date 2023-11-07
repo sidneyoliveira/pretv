@@ -41,6 +41,7 @@ body {
   width: 102vw;
   height: 102vh;
   object-fit: scale-down;
+  position: relative;
   z-index: 1;
 }
 .background{
