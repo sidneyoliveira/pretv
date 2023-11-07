@@ -30,30 +30,30 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide >
-          <div class="image-container1">
-            <img src="./img/a1.jpg" alt="" class='background1' />
-            <img src="./img/a1.jpg" alt="" class='item1' />
+          <div class="image-container">
+            <img src="./img/a1.jpg" alt="" class='background' />
+            <img src="./img/a1.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
 
         <SwiperSlide >
-          <div class="image-container2">
-            <img src="./img/a2.jpg" alt="" class='background2' />
-            <img src="./img/a2.jpg" alt="" class='item2' />
+          <div class="image-container">
+            <img src="./img/a2.jpg" alt="" class='background' />
+            <img src="./img/a2.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
 
         <SwiperSlide >
-          <div class="image-container3">
-            <img src="./img/a3.jpg" alt="" class='background3' />
-            <img src="./img/a3.jpg" alt="" class='item3' />
+          <div class="image-container">
+            <img src="./img/a3.jpg" alt="" class='background' />
+            <img src="./img/a3.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
 
         <SwiperSlide >
-          <div class="image-container4">
-            <img src="./img/a4.jpg" alt="" class='background4' />
-            <img src="./img/a4.jpg" alt="" class='item4' />
+          <div class="image-container">
+            <img src="./img/a4.jpg" alt="" class='background' />
+            <img src="./img/a4.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
 

@@ -38,8 +38,8 @@ body {
 
 .item {
   display: block;
-  width: 102vw;
-  height: 102vh;
+  width: 100vw;
+  height: 100vh;
   object-fit: scale-down;
   position: relative;
   z-index: 1;
@@ -48,6 +48,7 @@ body {
   display: block;
   width: 110%;
   height: 110%;
+  justify-items: center;
   object-fit: cover ;
   filter: blur(10px);
   z-index: -1;
