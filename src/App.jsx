@@ -31,16 +31,31 @@ export default function App() {
       >
         <SwiperSlide >
           <div class="image-container">
-
             <img src="./img/a1.jpg" alt="" class='background' />
             <img src="./img/a1.jpg" alt="" class='item' />
-            
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide >
+          <div class="image-container">
+            <img src="./img/a1.jpg" alt="" class='background' />
+            <img src="./img/a1.jpg" alt="" class='item' />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide >
+          <div class="image-container">
+            <img src="./img/a1.jpg" alt="" class='background' />
+            <img src="./img/a1.jpg" alt="" class='item' />
+          </div>
+        </SwiperSlide>
+        
+        <SwiperSlide >
+          <div class="image-container">
+            <img src="./img/a1.jpg" alt="" class='background' />
+            <img src="./img/a1.jpg" alt="" class='item' />
+          </div>
+        </SwiperSlide>
 
       </Swiper>
     </>
