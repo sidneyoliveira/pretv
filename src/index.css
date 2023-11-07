@@ -32,9 +32,9 @@ body {
   align-items: center;
 }
 
-.image-container {
+/* .image-container {
   position: relative;
-}
+} */
 
 .item {
   display: block;
