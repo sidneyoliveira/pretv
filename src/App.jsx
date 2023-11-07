@@ -30,7 +30,7 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide >
-          <div className="image-container">
+          <div class="image-container">
 
             <img src="./img/a1.jpg" alt="" class='background' />
             <img src="./img/a1.jpg" alt="" class='item' />
