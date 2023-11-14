@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -15,6 +15,20 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 export default function App() {
   return (
     <>
+    <div className='container'>
+      
+      <div className="col1">
+        <div className="images logo">
+          <img src="src\assets\logo.png" alt="logo" />
+        </div>
+        <div className="images redes">
+          <img src="src\assets\redes.png" alt="redes" />
+        </div>
+        <div className="footer-img">
+            <img src="src\assets\foto.png" alt="redes" />
+        </div>
+      </div>
+      
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -28,25 +42,19 @@ export default function App() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide >
+        <SwiperSlide>
           <div class="image-container">
-            <img src="./img/a1.jpg" alt="" class='background' />
             <img src="./img/a1.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
         <SwiperSlide >
           <div class="image-container">
-            <img src="./img/a2.jpg" alt="" class='background' />
             <img src="./img/a2.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
-        <SwiperSlide >
-          <div class="image-container">
-            <img src="./img/a2.jpg" alt="" class='background' />
-            <img src="./img/a2.jpg" alt="" class='item' />
-          </div>
-        </SwiperSlide>
+
       </Swiper>
+      </div>
     </>
   );
 }
