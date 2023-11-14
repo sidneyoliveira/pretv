@@ -16,20 +16,23 @@ body {
   padding: 0;
 }
 
-.swiper-wrapper {
-  width: 10vh;
-}
-
-.image-container {
-  position: relative;
-}
-
 .container{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   background-color: #002f5f;
   height: 100vh;
 }
+
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+    border-radius: 20px;
+}
+
+
 
 .col1{
   display: grid;
@@ -68,4 +71,30 @@ body {
 
 .col2{
   max-height: 100vh;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  width: 4vh;
+  padding: 4vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ac2b2b;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+
 }
