@@ -19,28 +19,25 @@ export default function App() {
       
       <div className="col1">
         <div className="images logo">
-          <img src="src\assets\logo.png" alt="logo" />
+          <img src="./images/logo.png" alt="logo" />
         </div>
         <div className="images redes">
-          <img src="src\assets\redes.png" alt="redes" />
+          <img src="./images/redes.png" alt="redes" />
         </div>
         <div className="footer-img">
-            <img src="src\assets\foto.png" alt="redes" />
+            <img src="./images/foto.png" alt="redes" />
         </div>
       </div>
-      
+
+      <div className="col2">
       <Swiper
-        spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2000,
+          delay: 8000,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        modules={[Autoplay]}
+        className="Slide-img"
       >
         <SwiperSlide>
           <div class="image-container">
@@ -55,6 +52,7 @@ export default function App() {
 
       </Swiper>
       </div>
+    </div>
     </>
   );
 }
