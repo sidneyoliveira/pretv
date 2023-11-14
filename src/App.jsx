@@ -25,7 +25,6 @@ export default function App() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
@@ -35,28 +34,18 @@ export default function App() {
             <img src="./img/a1.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
-
         <SwiperSlide >
           <div class="image-container">
             <img src="./img/a2.jpg" alt="" class='background' />
             <img src="./img/a2.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
-
         <SwiperSlide >
           <div class="image-container">
-            <img src="./img/a3.jpg" alt="" class='background' />
-            <img src="./img/a3.jpg" alt="" class='item' />
+            <img src="./img/a2.jpg" alt="" class='background' />
+            <img src="./img/a2.jpg" alt="" class='item' />
           </div>
         </SwiperSlide>
-
-        <SwiperSlide >
-          <div class="image-container">
-            <img src="./img/a4.jpg" alt="" class='background' />
-            <img src="./img/a4.jpg" alt="" class='item' />
-          </div>
-        </SwiperSlide>
-
       </Swiper>
     </>
   );
