@@ -9,7 +9,7 @@ function SlideImg() {
    setTimeout(() => {
     setCount(count+1);
       
-  }, "8000");
+  }, "10000");
 
   let Url = "./img/("+count+").jpg"
   
