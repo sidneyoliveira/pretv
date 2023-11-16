@@ -15,8 +15,6 @@ function SlideImg() {
       img.onload = () => {
         setImageUrl(url);
         setCount(prevCount => prevCount + 1);
-        console.log(prevCount);
-
       };
 
       img.onerror = () => {
