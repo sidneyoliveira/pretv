@@ -1,0 +1,18 @@
+
+.ImageSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 95vh;
+    height: 92vh;
+  
+    margin: 4vh 0;
+    background:#002f5f;
+  }
+  
+  .ImageSlide img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5vh;
+  }
