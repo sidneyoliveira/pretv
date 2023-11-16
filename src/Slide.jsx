@@ -25,7 +25,7 @@ function SlideImg() {
         setCount(prevCount => prevCount = 1);
         console.log('Erro ao carregar a imagem!');
       };
-    }, 5000);
+    }, 8000);
 
     // Limpar o intervalo quando o componente for desmontado
     return () => clearInterval(interval);
