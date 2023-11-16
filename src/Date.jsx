@@ -29,7 +29,6 @@ function DateTime() {
       setDate(data);
       setHora(hora);
 
-      console.log(setdata,sethora );
       }, 1000);
       
     }, [count]);
