@@ -8,7 +8,7 @@ function SlideImg() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const url = `/img/(${count}).jpg`;
+      const url = `./img/(${count}).jpg`;
       const img = new Image();
       img.src = url;
 
