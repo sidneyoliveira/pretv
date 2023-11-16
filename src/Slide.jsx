@@ -2,21 +2,39 @@ import React, { useRef, useEffect, useState } from 'react';
 import './slide.css';
 
 
-
 function SlideImg() {
   const [count, setCount] = useState(1);
+  const [imageUrl, setImageUrl] = useState('');
 
-   setTimeout(() => {
-    setCount(count+1);
-      
-  }, "10000");
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const url = `/img/(${count}).jpg`;
+      const img = new Image();
+      img.src = url;
 
-  let Url = "./img/("+count+").jpg"
-  
+      img.onload = () => {
+        setImageUrl(url);
+        setCount(prevCount => prevCount + 1);
+        console.log(prevCount);
+
+      };
+
+      img.onerror = () => {
+        // Se a imagem não for encontrada, podemos parar o intervalo ou tomar outra ação
+        clearInterval(interval);
+        setCount(prevCount => prevCount = 1);
+        console.log('Erro ao carregar a imagem!');
+      };
+    }, 5000);
+
+    // Limpar o intervalo quando o componente for desmontado
+    return () => clearInterval(interval);
+  }, [count]);
+ 
     return (
       <>
           <div className="ImageSlide">
-            <img src={Url} alt="" />
+          {imageUrl && <img src={imageUrl} alt={`Image ${count}`} />}
           </div>
       </>
     );

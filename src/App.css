@@ -32,12 +32,12 @@ body {
     border-radius: 20px;
 }
 
-
-
 .col1{
   display: grid;
   grid-template-rows: 1fr .3fr 3fr;
   max-height: 100vh;
+  width: 25vw;
+
 }
 
 .images{
@@ -73,8 +73,6 @@ body {
   max-height: 100vh;
 }
 
-
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -98,3 +96,4 @@ body {
   border-radius: 20px;
 
 }
+

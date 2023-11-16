@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import SlideImg from './Slide';
-
+import DateTime from './Date';
 
 import './app.css';
 
@@ -23,6 +23,10 @@ export default function App() {
 
       <div className="col2">
         <SlideImg/>
+      </div>
+
+      <div className="col3">
+        <DateTime/>
       </div>
     </div>
     </>
