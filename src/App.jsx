@@ -3,6 +3,7 @@ import SlideImg from './Slide';
 import DateTime from './Date';
 
 import './app.css';
+import Temperatura from './tempo';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
 
       <div className="col3">
         <DateTime/>
+        <Temperatura/>
       </div>
     </div>
     </>

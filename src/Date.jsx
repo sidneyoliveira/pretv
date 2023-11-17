@@ -19,9 +19,10 @@ function DateTime() {
       ];
 
       const [hour, minutes] = [
-        date.getHours(),
-        date.getMinutes(),
+        String(date.getHours()).padStart(2, "0"),
+        String(date.getMinutes()).padStart(2, "0")
       ];
+
 
       const data = `${day}/${month}/${year}`;
       const hora = `${hour}:${minutes}`;
@@ -37,7 +38,7 @@ function DateTime() {
     return (
       <>
           <div className="date">
-              {setdata && <p> {setdata}  {sethora} </p>}
+              {setdata && <p> {'17/11/2023 -'}  {sethora} </p>}
           </div>
       </>
     );

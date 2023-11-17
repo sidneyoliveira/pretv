@@ -3,15 +3,11 @@ import './slide.css';
 
 
 function SlideImg() {
-  const [count, setCount] = useState(1);
-  const [imageUrl, setImageUrl] = useState('');
-
-  
+  const [count, setCount] = useState(2);
+  const [imageUrl, setImageUrl] = useState("./img/(1).jpg");
 
   useEffect(() => {
-
-    setImageUrl("./img/(1).jpg");
-
+    
     const interval = setInterval(() => {
       const url = `./img/(${count}).jpg`;
       const img = new Image();
