@@ -1,0 +1,46 @@
+.containerTemp{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 26vw;
+    height: 50vh;
+
+    margin: 2vh 2vw;
+    background:#145494;
+    border-radius: 2vh;
+}
+
+.tl{
+    font-family: montserrat;
+    font-size: 5vh;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin: 1vh;
+
+}
+
+.tempNum{
+    font-family: montserrat;
+    font-size: 10vh;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: 1vh;
+
+}
+
+.desc{
+    display: flex;
+    align-items: center;
+    font-family: montserrat;
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: 1vh;
+
+}
+
+
+
