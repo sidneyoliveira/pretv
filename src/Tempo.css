@@ -14,7 +14,7 @@
 }
 
 .tl{
-    font-family: montserrat;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 5vh;
     color: rgb(255, 255, 255);
     font-weight: 700;
@@ -23,7 +23,7 @@
 }
 
 .tempNum{
-    font-family: montserrat;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10vh;
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -34,7 +34,7 @@
 .desc{
     display: flex;
     align-items: center;
-    font-family: montserrat;
+    font-family: Montserrat;
     font-size: 3vh;
     color: rgb(255, 255, 255);
     font-weight: 500;
