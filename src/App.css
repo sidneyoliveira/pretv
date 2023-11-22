@@ -5,21 +5,18 @@ html,
 body {
   position: relative;
   height: 100%;
-}
-
-body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat";
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
+
 .container{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  background-color: #002f5f;
+  grid-template-columns: .2fr 1.8fr 1fr;
   height: 100vh;
 }
 
@@ -71,6 +68,9 @@ body {
 
 .col2{
   max-height: 100vh;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .swiper {

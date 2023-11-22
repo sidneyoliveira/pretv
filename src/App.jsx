@@ -27,8 +27,7 @@ export default function App() {
       </div>
 
       <div className="col3">
-        <DateTime/>
-        <Temperatura/>
+        <Temperatura />
       </div>
     </div>
     </>

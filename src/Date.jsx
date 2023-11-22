@@ -10,24 +10,32 @@ function DateTime() {
     useEffect(() => {
 
       const interval = setInterval(() => {
-      const date = new Date();
 
-      const [month, day, year] = [
-        date.getMonth(),
-        date.getDate(),
-        date.getFullYear(),
-      ];
+        function formatarData(date) {
+          const diasSemana = ['Dom', 'Seg', 'Terç', 'Qua', 'Qui', 'Sexta', 'Sáb'];
+          const mesesAno = [
+            'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+            'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+          ];
+        
+          const diaSemana = diasSemana[date.getDay()];
+          const dia = date.getDate();
+          const mes = mesesAno[date.getMonth()];
+        
+          return `${diaSemana.slice(0, 6)}. ${dia} ${mes}`;
+        }
+        
+        const date = new Date();
+        const dataFormatada = formatarData(date);
 
       const [hour, minutes] = [
         String(date.getHours()).padStart(2, "0"),
         String(date.getMinutes()).padStart(2, "0")
       ];
 
-
-      const data = `${day}/${month}/${year}`;
       const hora = `${hour}:${minutes}`;
 
-      setDate(data);
+      setDate(dataFormatada);
       setHora(hora);
 
       }, 1000);
@@ -38,7 +46,8 @@ function DateTime() {
     return (
       <>
           <div className="date">
-              {setdata && <p> {'22/11/2023 -'}  {sethora} </p>}
+              {sethora && <p id='hora'> {sethora} <br /></p>}
+              {setdata && <p id='data'> {setdata}</p>}
           </div>
       </>
     );
