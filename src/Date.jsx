@@ -38,7 +38,7 @@ function DateTime() {
     return (
       <>
           <div className="date">
-              {setdata && <p> {'21/11/2023 -'}  {sethora} </p>}
+              {setdata && <p> {'22/11/2023 -'}  {sethora} </p>}
           </div>
       </>
     );
