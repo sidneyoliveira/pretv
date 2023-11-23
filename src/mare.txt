@@ -1,0 +1,24 @@
+import React, { useEffect, useState } from 'react';
+import { PDFDocument } from 'pdfjs-dist';
+
+const Mare = () => {
+    const [pdfContent, setPdfContent] = useState('');
+
+    const handleFileChange = async (event) => {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+  
+      reader.onload = async (e) => {
+        const contents = e.target.result;
+        const pdf = await PDFDocument.load(contents);
+        const pages = pdf.getPages();
+    };
+  
+    return (
+      <div>
+        <div>{pdfContent}</div>
+      </div>
+    );
+  }}
+
+export default Mare;
