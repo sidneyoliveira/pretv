@@ -56,14 +56,14 @@ body {
 }
 
 .footer-img{
-  height: 25vw;
+  height: 30vw;
 }
 
 .footer-img img{
   position: absolute;
   bottom: 0px;
   left: 0px;
-  width: 25vw;
+  width: 30vw;
 }
 
 .col2{

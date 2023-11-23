@@ -1,6 +1,9 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import './tempo.css';
 import { FaLocationDot } from "react-icons/fa6";
+import { RiWindyFill } from "react-icons/ri";
+import { WiHumidity } from "react-icons/wi";
+
 import { IconContext } from "react-icons";
 import DateTime from './Date';
 
@@ -33,7 +36,7 @@ function Temperatura() {
               </IconContext.Provider>    
             </div>
 
-            <div>
+            <div className='horadata'>
             <DateTime/>
             </div>
       
@@ -46,8 +49,34 @@ function Temperatura() {
                 {temp.weather && <spam> {temp.weather[0].description[0].toUpperCase() + temp.weather[0].description.substring(1)} </spam>}
                 {temp.weather && <img src={`https://openweathermap.org/img/wn/${temp.weather[0].icon}.png`}/>}
             </div>
+            
+            </div> 
 
-            </div>          
+            <div className="informacoes">
+            
+            <div id='vento'>
+              <div id='top-u'>
+              {temp.main && <spam className='text'>{temp.wind.speed+' km/h'}</spam>}
+              </div>
+              <div id='botton-u'>
+                <IconContext.Provider value={{ color: "white"}}><WiHumidity />
+                </IconContext.Provider>
+                <span>Vento</span>
+              </div>
+            </div> 
+
+            <div id='umidade'>
+              <div id='top-u'>
+              {temp.main && <spam className='text'>{temp.main.humidity+' %'}</spam>}
+              </div>
+              <div id='botton-u'>
+                <IconContext.Provider value={{ color: "white"}}><RiWindyFill />
+                </IconContext.Provider>
+                <span>Umidade</span>
+              </div>
+            </div> 
+            </div>
+
           </div>
       </>
     );

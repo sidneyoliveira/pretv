@@ -5,16 +5,16 @@
   align-items: center;
   flex-direction: column;
 
-  width: 15vw;
-  height: 10vh;
+  width: 18vw;
+  height: 12vh;
   margin: 0 2vw 4vh 2vw;
-  background:  #ffffff1c;
+  background:  #00ccff27;
   border-radius: 2vh;
 }
 
 p#hora{
   font-family: "Montserrat";
-  font-size: 5vh;
+  font-size: 6vh;
   color: rgb(241, 241, 241);
   font-weight: 300;
   margin: 0;
@@ -22,7 +22,7 @@ p#hora{
 
 p#data{
   font-family: "Montserrat";
- font-size: 2vh;
+ font-size: 2.5vh;
  color: rgb(241, 241, 241);
  font-weight: 300;
  margin: 0;
